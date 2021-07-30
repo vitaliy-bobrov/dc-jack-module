@@ -1,0 +1,161 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Jack-DC J1
+U 1 1 609061DB
+P 1050 1550
+F 0 "J1" H 1107 1875 50  0000 C CNN
+F 1 "PWR" H 1107 1784 50  0000 C CNN
+F 2 "jacks:DC_JACK" H 1100 1510 50  0001 C CNN
+F 3 "~" H 1100 1510 50  0001 C CNN
+	1    1050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 609189B7
+P 1450 1200
+F 0 "H1" H 1550 1249 50  0001 L CNN
+F 1 "9V" H 1550 1250 50  0000 L CNN
+F 2 "supply_pins:PAD1" H 1450 1200 50  0001 C CNN
+F 3 "~" H 1450 1200 50  0001 C CNN
+	1    1450 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 609194A5
+P 1900 1550
+F 0 "H2" H 2000 1599 50  0001 L CNN
+F 1 "GND" H 2000 1600 50  0000 L CNN
+F 2 "supply_pins:PAD1" H 1900 1550 50  0001 C CNN
+F 3 "~" H 1900 1550 50  0001 C CNN
+	1    1900 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 609195DE
+P 1500 1750
+F 0 "#PWR0101" H 1500 1500 50  0001 C CNN
+F 1 "GND" H 1505 1577 50  0000 C CNN
+F 2 "" H 1500 1750 50  0001 C CNN
+F 3 "" H 1500 1750 50  0001 C CNN
+	1    1500 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1450 1450 1450
+Wire Wire Line
+	1450 1450 1450 1300
+Wire Wire Line
+	1350 1650 1500 1650
+Wire Wire Line
+	1500 1750 1500 1650
+Connection ~ 1500 1650
+Wire Wire Line
+	1500 1650 1900 1650
+$Comp
+L Connector:AudioJack3_Switch J2
+U 1 1 6091A28C
+P 2900 1450
+F 0 "J2" H 2882 1875 50  0000 C CNN
+F 1 "IN" H 2882 1784 50  0000 C CNN
+F 2 "jacks:TRS_SW" H 2900 1450 50  0001 C CNN
+F 3 "~" H 2900 1450 50  0001 C CNN
+	1    2900 1450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3100 1750
+NoConn ~ 3100 1550
+NoConn ~ 3100 1450
+Wire Wire Line
+	3100 1250 3300 1250
+Wire Wire Line
+	3300 1250 3300 1350
+Wire Wire Line
+	3300 1350 3100 1350
+$Comp
+L power:GND #PWR0102
+U 1 1 6091ADDC
+P 3300 1350
+F 0 "#PWR0102" H 3300 1100 50  0001 C CNN
+F 1 "GND" H 3305 1177 50  0000 C CNN
+F 2 "" H 3300 1350 50  0001 C CNN
+F 3 "" H 3300 1350 50  0001 C CNN
+	1    3300 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 1350
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 6091B765
+P 3550 1550
+F 0 "H3" H 3650 1599 50  0001 L CNN
+F 1 "IN" H 3650 1600 50  0000 L CNN
+F 2 "supply_pins:PAD1" H 3550 1550 50  0001 C CNN
+F 3 "~" H 3550 1550 50  0001 C CNN
+	1    3550 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1650 3550 1650
+$Comp
+L Connector:AudioJack3_Switch J3
+U 1 1 6091C6CC
+P 4300 1450
+F 0 "J3" H 4282 1875 50  0000 C CNN
+F 1 "OUT" H 4282 1784 50  0000 C CNN
+F 2 "jacks:TRS_SW" H 4300 1450 50  0001 C CNN
+F 3 "~" H 4300 1450 50  0001 C CNN
+	1    4300 1450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4500 1750
+NoConn ~ 4500 1550
+NoConn ~ 4500 1450
+Wire Wire Line
+	4500 1250 4700 1250
+Wire Wire Line
+	4700 1250 4700 1350
+Wire Wire Line
+	4700 1350 4500 1350
+$Comp
+L power:GND #PWR0103
+U 1 1 6091C6D8
+P 4700 1350
+F 0 "#PWR0103" H 4700 1100 50  0001 C CNN
+F 1 "GND" H 4705 1177 50  0000 C CNN
+F 2 "" H 4700 1350 50  0001 C CNN
+F 3 "" H 4700 1350 50  0001 C CNN
+	1    4700 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 1350
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 6091C6DF
+P 4950 1550
+F 0 "H4" H 5050 1599 50  0001 L CNN
+F 1 "OUT" H 5050 1600 50  0000 L CNN
+F 2 "supply_pins:PAD1" H 4950 1550 50  0001 C CNN
+F 3 "~" H 4950 1550 50  0001 C CNN
+	1    4950 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1650 4950 1650
+$EndSCHEMATC
